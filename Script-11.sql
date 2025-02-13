@@ -48,3 +48,14 @@ CREATE TABLE  Campionato.Classifica (
     FOREIGN KEY (id_casa) REFERENCES CaseAutomobilistiche(id)
 );
 
+insert into campionato.caseautomobilistiche (nome, colore_livrea)
+values
+('Ferrari', 'Rosso'),
+('Mercedes', 'Argento'),
+('Red Bull Racing', 'Blu e Rosso'),
+('McLaren', 'Arancione e Nero'),
+('Alpine', 'Blu e Bianco'),
+('Aston Martin', 'Verde'),
+('Alfa Romeo', 'Rosso e Bianco'),
+('Williams', 'Blu e Bianco');
+
