@@ -1,15 +1,26 @@
 <?php
-require '../../altre_pagine/funzioni/functions.php';
+
 // Ottieni il nome del file corrente
 $currentPage = basename($_SERVER['PHP_SELF']);
+function isActive($page)
+{
+
+    return (basename($_SERVER['PHP_SELF']) === $page) ? "nav-linkAttivo" : "nav-link";
+
+}
+
+
 // Funzione per determinare il percorso del CSS
 $linkcss = function () {
 global $currentPage;
     // Verifica se la pagina è index.php
     if ($currentPage === "index.php") {
         return '../../altre_pagine/css/styleHome.css'; // Percorso CSS per la home
-    } else{
+    } else if($currentPage === "iscrizione.php"){
         return "../../altre_pagine/css/styleInserimento.css"; // Percorso CSS per altre pagine
+    }
+    else{
+        return "../../../altre_pagine/css/styleRisultati.css";
     }
 };
 
