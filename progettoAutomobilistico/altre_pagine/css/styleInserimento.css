@@ -1,0 +1,157 @@
+/* Personalizzazione della navbar */
+.custom-navbar {
+    background-color: #fc766d;
+    /* Colore di sfondo più scuro */
+}
+
+.custom-navbar .navbar-brand {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-linkAttivo{
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #00ff40;
+
+}
+.nav-linkAttivo:hover{
+    color: #00ff40;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: #ecf0f1;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-color: #ecf0f1;
+}
+
+/* Personalizzazione dello stato attivo */
+.custom-navbar .navbar-nav .nav-linkAttivo {
+    color: #00ff40;
+    font-weight: 600;
+}
+
+#testo_footer {
+    text-align: center;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+form {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3%;
+}
+input[type="text"],
+input[type="date"],
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Focus sugli input */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus{
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Stile per il pulsante */
+Form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Hover del pulsante */
+Form button:hover {
+    background-color: #45a049;
+}
+.catDespair{
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    text-align: center;
+    align-content: center;;
+    background-color: red;
+    color: wheat;
+}
+.no_errore{
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    text-align: center;
+    align-content: center;
+    background-color: green;
+    color: black;
+}
+.bottonespeciale {
+    display: block; /* Permette l'uso di margin auto */
+    width: fit-content; /* Adatta la larghezza al contenuto */
+    margin: 20px auto; /* Lo centra orizzontalmente */
+    padding: 10px 20px; /* Migliora la leggibilità */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Arrotonda i bordi */
+    cursor: pointer;
+    background-color: #ff6b6b; /* Rosso corallo */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.bottonespeciale:hover {
+    background-color: #d43f3f; /* Rosso più scuro per effetto hover */
+}
+#titolo{
+    text-align: center;
+}

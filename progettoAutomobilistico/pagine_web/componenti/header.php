@@ -1,4 +1,5 @@
 <?php
+require '../../altre_pagine/funzioni/functions.php';
 // Ottieni il nome del file corrente
 $currentPage = basename($_SERVER['PHP_SELF']);
 // Funzione per determinare il percorso del CSS
@@ -6,9 +7,9 @@ $linkcss = function () {
 global $currentPage;
     // Verifica se la pagina è index.php
     if ($currentPage === "index.php") {
-        return '../altre_pagine/styleHome.css'; // Percorso CSS per la home
+        return '../../altre_pagine/css/styleHome.css'; // Percorso CSS per la home
     } else{
-        return "../altre_pagine/styleForm.css"; // Percorso CSS per altre pagine
+        return "../../altre_pagine/css/styleInserimento.css"; // Percorso CSS per altre pagine
     }
 };
 
@@ -31,7 +32,7 @@ global $currentPage;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-salable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Link per il CSS dinamico -->
@@ -42,3 +43,5 @@ global $currentPage;
     <!-- Titolo dinamico -->
     <title><?= $titolo() ?></title> <!-- Corretto: chiamato la funzione con le parentesi -->
 </head>
+<?php require '../componenti/navbar.php' ?>
+<h1 id="titolo"> Campionato automobilistico </h1>

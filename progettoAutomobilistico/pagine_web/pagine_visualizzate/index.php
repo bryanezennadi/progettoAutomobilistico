@@ -1,5 +1,6 @@
 <?php
-require "../componenti/header.php"
+require "../componenti/header.php";
+
 ?>
 <body>
 
